@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#d71920">
+	<meta name="description" content="Formulário de solicitação de ingressos para Athletico-PR x Coritiba.">
+	<title>Ingressos | Athletico-PR x Coritiba</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a class="skip-link" href="#conteudo">Pular para o formulário</a>
+
+	<header class="site-header">
+		<a class="brand" href="#inicio" aria-label="Furacão, início">
+			<img class="brand-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsK3TjaJ7Eiq0hhOQRt8pyw0hayxN6a370T3J8d9Axw&amp;s=10" alt="">
+			<span>FURACÃO <span class="brand-light">NA ARENA</span></span>
+		</a>
+		<p class="header-note">INGRESSOS · TEMPORADA 2026</p>
+	</header>
+
+	<main id="conteudo">
+		<section class="match-banner" id="inicio" aria-labelledby="match-title">
+			<div class="banner-copy">
+				<p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> CLÁSSICO PARANAENSE</p>
+				<h1 id="match-title">Athletico-PR <span class="versus">×</span> Coritiba</h1>
+				<p class="match-details">Arena da Baixada <span aria-hidden="true">/</span> Curitiba, PR</p>
+			</div>
+			<div class="match-art" aria-label="Viveros e os escudos dos dois times">
+				<img class="player-secondary" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsfC_9Cbrm8Un20qsj6zFJU9LXt6aV0z2Z1yyry-HBlw&amp;s=10" alt="Viveros com a camisa do Athletico">
+				<img class="player-main" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQikt0oYNgdgGVMV26dzFj-gctqkmg5HwO3kRpqBPTW-Q&amp;s=10" alt="Viveros provocando no Athletiba">
+				<div class="crest-row" aria-label="Athletico contra Coritiba">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsK3TjaJ7Eiq0hhOQRt8pyw0hayxN6a370T3J8d9Axw&amp;s=10" alt="Escudo do Athletico">
+					<span aria-hidden="true">×</span>
+					<img class="upside-down" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgiDIIJT5yJ7Fx_iQOeP5rAjmenmWoTbzQwDwyoMtuQ&amp;s=10" alt="Escudo do Coritiba de cabeça para baixo">
+				</div>
+			</div>
+			<div class="banner-stripe" aria-hidden="true"></div>
+		</section>
+
+		<div class="form-layout">
+			<section class="form-intro" aria-labelledby="form-title">
+				<p class="eyebrow">GARANTA SEU LUGAR</p>
+				<h2 id="form-title">Viva o clássico<br>de perto.</h2>
+				<p>Preencha seus dados e escolha o setor para solicitar seus ingressos.</p>
+				<p class="notice"><span aria-hidden="true">*</span> Campos obrigatórios</p>
+			</section>
+
+			<form class="ticket-form" action="#" method="post">
+				<div class="form-heading">
+					<h2>Solicitação de ingresso</h2>
+					<span class="step-label">01 <span aria-hidden="true">/</span> 01</span>
+				</div>
+
+				<div class="field-grid">
+					<div class="field field-wide">
+						<label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+						<input class="field-control" id="nome" name="nome" type="text" autocomplete="name" required aria-required="true">
+					</div>
+
+					<div class="field">
+						<label for="email">E-mail <span aria-hidden="true">*</span></label>
+						<input class="field-control" id="email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="email-help email-error">
+						<span class="field-help" id="email-help">Enviaremos a confirmação para este endereço.</span>
+						<span class="error-message" id="email-error" role="alert">Informe um e-mail válido, como nome@exemplo.com.</span>
+					</div>
+
+					<div class="field">
+						<label for="telefone">Celular <span aria-hidden="true">*</span></label>
+						<input class="field-control" id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(41) 99999-9999" required aria-required="true">
+					</div>
+
+					<div class="field field-wide">
+						<label for="cpf">CPF <span aria-hidden="true">*</span></label>
+						<input class="field-control" id="cpf" name="cpf" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{11}" minlength="11" maxlength="11" placeholder="Somente números" required aria-required="true" aria-describedby="cpf-help">
+						<span class="field-help" id="cpf-help">Digite os 11 números, sem pontos ou traço.</span>
+					</div>
+
+					<div class="field field-wide">
+						<label for="quantidade">Quantidade de ingressos <span aria-hidden="true">*</span></label>
+						<input class="field-control quantity-control" id="quantidade" name="quantidade" type="number" min="1" max="6" value="1" required aria-required="true" aria-describedby="quantidade-help">
+						<span class="field-help" id="quantidade-help">Limite de 6 ingressos por solicitação.</span>
+					</div>
+
+					<div class="field field-wide">
+						<label for="meia-quantidade">Ingressos com meia-entrada (menores de 12 anos)</label>
+						<input class="field-control quantity-control" id="meia-quantidade" name="meia_entrada" type="number" min="0" max="6" value="0" aria-describedby="meia-help meia-error">
+						<span class="field-help" id="meia-help">Cada meia-entrada custa 50% do setor. A quantidade de meias não pode superar o total de ingressos.</span>
+						<span class="field-error" id="meia-error" role="alert" hidden></span>
+					</div>
+				</div>
+
+				<fieldset class="sector-options">
+					<legend>Escolha seu setor <span aria-hidden="true">*</span></legend>
+					<div class="sector-grid">
+						<div class="sector-choice">
+							<input id="setor-reta" type="radio" name="setor" value="reta-visitante" data-price="150" checked required aria-required="true">
+							<label class="sector-card" for="setor-reta"><strong>Reta</strong><span>Visão central</span><span class="sector-price">R$ 150,00 por ingresso</span></label>
+						</div>
+						<div class="sector-choice">
+							<input id="setor-gol" type="radio" name="setor" value="gol" data-price="100">
+							<label class="sector-card" for="setor-gol"><strong>Gol</strong><span>Festa atrás da rede</span><span class="sector-price">R$ 100,00 por ingresso</span></label>
+						</div>
+						<div class="sector-choice">
+							<input id="setor-vip" type="radio" name="setor" value="vip" data-price="250">
+							<label class="sector-card" for="setor-vip"><strong>VIP</strong><span>Conforto premium</span><span class="sector-price">R$ 250,00 por ingresso</span></label>
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="price-summary" role="status" aria-live="polite" aria-atomic="true">
+					<div>
+						<p class="price-label">Estimativa da compra</p>
+						<p class="price-breakdown" id="price-breakdown">1 ingresso × R$ 150,00</p>
+					</div>
+					<output class="price-total" id="price-total" aria-label="Valor total simulado">R$ 150,00</output>
+				</div>
+
+				<div class="terms-field">
+					<input id="termos" name="termos" type="checkbox" required aria-required="true">
+					<label for="termos">Confirmo que os dados informados estão corretos.</label>
+				</div>
+
+				<button class="submit-button" type="submit">
+					<span>Solicitar ingressos</span>
+					<span aria-hidden="true">↗</span>
+				</button>
+				<p class="form-footnote">Protótipo de interface. O envio dos dados requer um serviço de formulários; a solicitação também depende da disponibilidade.</p>
+			</form>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<span>ATHLETICO PARANAENSE</span>
+		<span>RUBRO-NEGRO ATÉ O FIM.</span>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
